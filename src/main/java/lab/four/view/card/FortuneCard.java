@@ -1,10 +1,10 @@
 package lab.four.view.card;
 
 import lab.four.observer.IFortuneController;
-import lab.four.view.card.utils.ActionGroup;
-import lab.four.view.card.utils.FortuneTeller;
-import lab.four.view.card.utils.TitleFont;
-import lab.four.view.card.utils.TitleGroup;
+import lab.four.view.card.components.ActionGroup;
+import lab.four.view.card.components.FortuneTeller;
+import lab.four.view.card.components.TitleFont;
+import lab.four.view.card.components.TitleGroup;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.*;

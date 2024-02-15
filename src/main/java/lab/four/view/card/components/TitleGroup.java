@@ -1,4 +1,4 @@
-package lab.four.view.card.utils;
+package lab.four.view.card.components;
 
 import javax.swing.*;
 import java.awt.*;

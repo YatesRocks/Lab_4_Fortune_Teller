@@ -1,4 +1,4 @@
-package lab.four.view.card.utils;
+package lab.four.view.card.components;
 
 import lab.four.observer.IFortuneController;
 
@@ -16,7 +16,7 @@ public class FortuneTeller extends JScrollPane {
 
     private void configureTextArea() {
         textArea.setEditable(false);
-        textArea.setLineWrap(false);
+        textArea.setLineWrap(true);
         textArea.setWrapStyleWord(true);
         textArea.setColumns(controller.readFortune().length());
         textArea.setRows(cursor);
@@ -28,7 +28,7 @@ public class FortuneTeller extends JScrollPane {
         String fortune = controller.readFortune();
         if (fortune.length() >= textArea.getColumns())
             textArea.setColumns(fortune.length() / 2);
-        textArea.append(fortune + "\n");
+        textArea.append(fortune + "\n~ ~ ~ ~ ~\n");
         textArea.setCaretPosition(textArea.getDocument().getLength());
         textArea.setRows(cursor++);
     }
