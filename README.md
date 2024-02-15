@@ -11,7 +11,10 @@ Reading a fortune _appends_ to the text area, and fortunes are not to be
 repeated twice in a row. Create separate fonts for title, buttons, and display.
 The program must be reasonably visually appealing.
 
-
+# Running
+This project uses the gradle `application` plugin. To run, simply type `gradle run`
+on the command line. Alternatively, if your IDE offers a UI for selecting tasks,
+just find "run" under the `application` group.
 
 ### Attribution
 1. <a href="https://www.flaticon.com/free-icons/witch" title="witch icons">Witch icons created by Skyclick - Flaticon</a>
