@@ -28,7 +28,7 @@ public class FortuneCard extends JPanel {
 
     private JPanel title(String title) {
         JPanel panel = new JPanel(new MigLayout());
-        panel.add(new TitleGroup(title, new TitleFont(), "src/main/resources/ico.png"));
+        panel.add(new TitleGroup(title, new TitleFont(), "src/main/resources/fortune-teller.png"));
         return panel;
     }
 
