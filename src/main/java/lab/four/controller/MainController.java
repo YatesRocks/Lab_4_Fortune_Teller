@@ -11,17 +11,17 @@ public class MainController {
     public MainController() {
         FlatLightLaf.setup();
         File icon = new File("src/main/resources/ico.png");
-        MainView mainView = new MainView(600, 600, "Lab 04: Fortune Teller (Jordan Yates)", icon.getAbsolutePath());
+        new MainView(600, 600, "Lab 04: Fortune Teller (Jordan Yates)", icon.getAbsolutePath());
 
         FortuneModel model = new FortuneModel();
-        initFortuneCard(model, "Fortune");
+        initFortuneCard(model);
 
         CardHandler.nextCard();
     }
 
-    private void initFortuneCard(FortuneModel model, String label) {
+    private void initFortuneCard(FortuneModel model) {
         FortuneController controller = new FortuneController(model);
-        FortuneCard card = new FortuneCard(controller, label);
-        CardHandler.registerCard(label, card);
+        FortuneCard card = new FortuneCard(controller, "Fortune");
+        CardHandler.registerCard("Fortune", card);
     }
 }

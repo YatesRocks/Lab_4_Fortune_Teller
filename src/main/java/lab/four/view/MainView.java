@@ -1,6 +1,5 @@
 package lab.four.view;
 
-import lab.four.Main;
 import lab.four.controller.CardHandler;
 
 import javax.swing.*;

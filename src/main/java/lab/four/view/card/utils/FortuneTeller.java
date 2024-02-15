@@ -3,15 +3,10 @@ package lab.four.view.card.utils;
 import lab.four.observer.IFortuneController;
 
 import javax.swing.*;
-import javax.swing.text.AttributeSet;
-import javax.swing.text.SimpleAttributeSet;
-import javax.swing.text.StyleConstants;
-import javax.swing.text.StyleContext;
-import java.awt.*;
 
 public class FortuneTeller extends JScrollPane {
-    private IFortuneController controller;
-    private JTextArea textArea = new JTextArea();
+    private final IFortuneController controller;
+    private final JTextArea textArea = new JTextArea();
 
     public FortuneTeller(IFortuneController controller) {
         this.controller = controller;
